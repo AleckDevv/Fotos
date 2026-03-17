@@ -22,12 +22,16 @@ export const Button = React.forwardRef(({
   size = 'md',
   icon: Icon,
   iconPosition = 'right',
+  href,
+  target,
   whileHover = { scale: 1.02 },
   whileTap = { scale: 0.98 },
   ...props
 }, ref) => {
+  const Component = href ? motion.a : motion.button;
+
   return (
-    <motion.button
+    <Component
       ref={ref}
       whileHover={whileHover}
       whileTap={whileTap}
@@ -42,7 +46,7 @@ export const Button = React.forwardRef(({
       {Icon && iconPosition === 'left' && <Icon className="w-5 h-5" />}
       {children}
       {Icon && iconPosition === 'right' && <Icon className="w-5 h-5" />}
-    </motion.button>
+    </Component>
   );
 });
 

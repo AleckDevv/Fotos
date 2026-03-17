@@ -20,10 +20,10 @@ export const Demo = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="p-1 rounded-3xl bg-gradient-to-br from-gold-500/20 via-slate-800 to-slate-900 shadow-2xl">
-            {/* Using placeholder images that look like old/new photos */}
+            {/* Imagens de Demonstração (Unsplash) */}
             <BeforeAfterSlider 
-              beforeImage="https://images.unsplash.com/photo-1541981678122-ce51f0c3fd34?q=80&w=1471&auto=format&fit=crop&blur=10&sepia=100"
-              afterImage="https://images.unsplash.com/photo-1541981678122-ce51f0c3fd34?q=80&w=1471&auto=format&fit=crop"
+              beforeImage="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&sepia=80&blur=2&sat=-100"
+              afterImage="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop"
               className="rounded-3xl"
             />
           </div>

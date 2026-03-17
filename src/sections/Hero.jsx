@@ -30,13 +30,27 @@ export const Hero = () => {
           </motion.div>
 
           <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
             className="text-5xl md:text-7xl font-serif font-bold tracking-tight mb-8 text-balance leading-tight"
           >
             Transforme suas fotos simples em <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-200">memórias eternas.</span>
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+            className="mb-8 relative rounded-2xl overflow-hidden aspect-video max-w-2xl mx-auto shadow-2xl border border-slate-800"
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1000&auto=format&fit=crop" 
+              alt="Destaque restauração"
+              className="w-full h-full object-cover" 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
+          </motion.div>
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -53,10 +67,10 @@ export const Hero = () => {
             transition={{ delay: 0.7 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button size="lg" icon={ArrowRight}>
+            <Button size="lg" icon={ArrowRight} href="https://wa.me/5586994792915" target="_blank">
               Transformar minha foto
             </Button>
-            <Button size="lg" variant="ghost">
+            <Button size="lg" variant="ghost" href="#demo">
               Ver exemplos
             </Button>
           </motion.div>

@@ -55,22 +55,22 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-medium text-white mb-4">Contato Direto</h4>
             <div className="space-y-4">
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-green-500/50 hover:bg-slate-900 transition-colors group">
+              <a href="https://wa.me/5586994792915" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-green-500/50 hover:bg-slate-900 transition-colors group">
                 <div className="p-2 rounded-lg bg-green-500/10 text-green-500 group-hover:scale-110 transition-transform">
                   <MessageCircle className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-sm text-slate-400">Atendimento WhatsApp</p>
-                  <p className="text-white font-medium group-hover:text-green-400 transition-colors">(11) 99999-9999</p>
+                  <p className="text-white font-medium group-hover:text-green-400 transition-colors">(86) 99479-2915</p>
                 </div>
               </a>
-              <a href="mailto:contato@restaurart.com" className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-gold-500/50 hover:bg-slate-900 transition-colors group">
+              <a href="mailto:suporte.fotos@gmail.com" className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-gold-500/50 hover:bg-slate-900 transition-colors group">
                 <div className="p-2 rounded-lg bg-gold-500/10 text-gold-500 group-hover:scale-110 transition-transform">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-sm text-slate-400">Email Comercial</p>
-                  <p className="text-white font-medium group-hover:text-gold-400 transition-colors break-all text-sm">contato@restaurart.com</p>
+                  <p className="text-white font-medium group-hover:text-gold-400 transition-colors break-all text-sm">suporte.fotos@gmail.com</p>
                 </div>
               </a>
             </div>

@@ -40,10 +40,10 @@ export const EmotionalCall = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto shadow-xl shadow-gold-500/20 text-lg">
+            <Button size="lg" className="w-full sm:w-auto shadow-xl shadow-gold-500/20 text-lg" href="https://wa.me/5586994792915" target="_blank">
               Começar Restauração
             </Button>
-            <Button size="lg" variant="outline" icon={MessagesSquare} className="w-full sm:w-auto text-lg bg-slate-950/50">
+            <Button size="lg" variant="outline" icon={MessagesSquare} className="w-full sm:w-auto text-lg bg-slate-950/50" href="https://wa.me/5586994792915" target="_blank">
               Falar com Atendimento
             </Button>
           </div>

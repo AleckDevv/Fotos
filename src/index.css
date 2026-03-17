@@ -6,7 +6,10 @@
 
 @layer base {
   body {
-    @apply bg-slate-950 text-slate-50 antialiased selection:bg-gold-500/30 selection:text-gold-200 overflow-x-hidden;
+    @apply bg-slate-950 text-slate-50 antialiased overflow-x-hidden;
+  }
+  ::selection {
+    @apply bg-gold-500/30 text-gold-200;
   }
 }
 
