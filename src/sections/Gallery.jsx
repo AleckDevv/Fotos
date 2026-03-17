@@ -2,15 +2,15 @@ import React from 'react';
 import { Section, SectionHeader } from '../components/Section';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
+import img1 from '../assets/pexels-asaadoro-19186568.jpg';
+import img2 from '../assets/pexels-asaadoro-191865689.jpg';
+import img3 from '../assets/pexels-emris-6073561.jpg';
+import img4 from '../assets/pexels-gatsby-yang-857486579-19682551.jpg';
+import img5 from '../assets/pexels-hannah-bickmore-105653438-12551623.jpg';
+import img6 from '../assets/pexels-orange-visuals-2159990578-36537399.jpg';
+
 export const Gallery = () => {
-  const images = [
-    "https://images.unsplash.com/photo-1541981678122-ce51f0c3fd34?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1516961642265-531546e84af2?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1510214643542-a7d189bb51f2?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1554030737-29378129eeb1?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1601265819772-246e7f4c5496?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1607427293702-036933bbf746?q=80&w=800&auto=format&fit=crop"
-  ];
+  const images = [img1, img2, img3, img4, img5, img6];
 
   return (
     <Section id="gallery" className="bg-slate-950 border-t border-slate-800/50">

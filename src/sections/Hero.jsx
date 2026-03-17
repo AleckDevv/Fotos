@@ -26,7 +26,7 @@ export const Hero = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/50 border border-slate-700/50 text-gold-400 text-sm font-medium mb-8 backdrop-blur-sm"
           >
             <Sparkles className="w-4 h-4" />
-            <span>Arte & Restauração Digital</span>
+            {/* <span>Arte & Restauração Digital</span> */}
           </motion.div>
 
           <motion.h1 

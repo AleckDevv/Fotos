@@ -33,6 +33,8 @@ export const Button = React.forwardRef(({
   return (
     <Component
       ref={ref}
+      href={href}
+      target={target}
       whileHover={whileHover}
       whileTap={whileTap}
       className={cn(

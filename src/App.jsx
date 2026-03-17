@@ -4,6 +4,7 @@ import { Demo } from './sections/Demo';
 import { HowItWorks } from './sections/HowItWorks';
 import { Gallery } from './sections/Gallery';
 import { Benefits } from './sections/Benefits';
+import { Pricing } from './sections/Pricing';
 import { Testimonials } from './sections/Testimonials';
 import { EmotionalCall } from './sections/EmotionalCall';
 import { Footer } from './sections/Footer';
@@ -16,11 +17,15 @@ function App() {
       if (!target) return;
       
       const href = target.getAttribute('href');
-      if (href?.startsWith('#')) {
+      if (href?.startsWith('#') && href !== '#') {
         e.preventDefault();
-        const element = document.querySelector(href);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+        try {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        } catch {
+          // Ignore invalid selectors silently
         }
       }
     };
@@ -42,6 +47,7 @@ function App() {
         <HowItWorks />
         <Gallery />
         <Benefits />
+        <Pricing />
         <Testimonials />
         <EmotionalCall />
       </main>

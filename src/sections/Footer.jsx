@@ -21,9 +21,9 @@ export const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: Instagram, href: "#", label: "Instagram" },
-                { icon: MessageCircle, href: "#", label: "WhatsApp" },
-                { icon: Mail, href: "#", label: "Email" },
+                {target: "_blank", icon: Instagram, href: "https://www.instagram.com/res_taur_art?igsh=ZmlpYjRqNmoyNTg2", label: "Instagram" },
+                { icon: MessageCircle, href: "https://wa.me/5586994792915", label: "WhatsApp" },
+                { icon: Mail, href: "mailto:suporte.fotos@gmail.com", label: "Email" },
               ].map((social, idx) => (
                 <motion.a
                   key={idx}
@@ -41,11 +41,16 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-medium text-white mb-4">Navegação</h4>
             <ul className="space-y-3">
-              {['Como Funciona', 'Galeria', 'Benefícios', 'Depoimentos'].map((item, idx) => (
+              {[
+                { label: 'Como Funciona', id: 'how-it-works' },
+                { label: 'Galeria', id: 'gallery' },
+                { label: 'Benefícios', id: 'benefits' },
+                { label: 'Depoimentos', id: 'testimonials' }
+              ].map((item, idx) => (
                 <li key={idx}>
-                  <a href={`#${item.toLowerCase().replace(' ', '-')}`} className="text-slate-400 hover:text-gold-400 transition-colors flex items-center gap-1 group">
+                  <a href={`#${item.id}`} className="text-slate-400 hover:text-gold-400 transition-colors flex items-center gap-1 group">
                     <ArrowRight className="w-3 h-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all text-gold-400" />
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
